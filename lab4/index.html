@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My stones</title>
+
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="main-header">
+            <div class="container p-3">
+                <div class="row mb-3">
+                    <div class="logo col-md-1">
+                        My STONE
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tabs">
+                            <a href="#" class="my_stones" id="my_stones">
+                                My Stones
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-end">
+                        <input id="search_input" type="text" class="form-control" placeholder="Type something..." />
+                    </div>
+                    <div class="col-md-1">
+                        <button id="search_button" type="button" class="btn btn-primary">
+                            Search
+                        </button>
+                    </div>
+                    <div class="col-md-1">
+                        <button id="clear_find_button" type="button" class="btn btn-danger">
+                            Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-md-3 mt-2">
+                <form id="add_form" class="bg-light">
+                    <h3 class="mb-3">Manage Stones</h3>
+                    <div class="mb-3">
+                        <label id="search_label" class="form-label">
+                            Sort by the most
+                            expensive stones </label>
+                        <label class="switch">
+                            <input id="sort_switch" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <div class="horizontal_block"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label id="count_label" class="form-label">Count total daily expenses:</label>
+                    </div>
+                    <div class="mb-3">
+                        <button id="count_button" type="button" class="btn btn-primary">
+                            Count
+                        </button>
+                    </div>
+                    <div class="mb-3">
+                        <label id="count_result_label" class="count_result_label">
+                            Total price:
+                        </label>
+                        <span id="total_price">0$</span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 mt-2">
+                <ul id="items_container" class="col-md-4">
+                </ul>
+            </div>
+            <div class="col-md-5 mt-2">
+                <div class="create_stone_title">Create stone</div>
+                <div class="create_title_input">
+                    <form id="stoneForm" class="create_stone_form">
+                        <label for="stone-select">Title</label><br>
+                        <select name="stones" id="stone-select" required>
+                            <option value="">Select a title</option>
+                            <option value="Diamond">Diamond</option>
+                            <option value="Smaragd">Smaragd</option>
+                            <option value="Rubin">Rubin</option>
+                            <option value="Stone">Stone</option>
+                        </select><br>
+                        <label for="description_input">Description</label><br>
+                        <input id="description_input" type="text" class="description-control"
+                            placeholder="Type something..." required /><br>
+                        <label for="expenses_input">Daily expenses ($)</label><br>
+                        <input id="expenses_input" type="number" class="expenses-control" placeholder="Example, 5"
+                            min="1" step="1" required /><br>
+
+                        <button id="submit_button" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

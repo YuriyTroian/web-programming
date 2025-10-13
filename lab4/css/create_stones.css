@@ -1,0 +1,32 @@
+.container.p-3 {
+    border-radius: 10px;
+    border-color: #4F5665;
+}
+
+.logo.col-md-1 {
+    min-width: 100px;
+    max-height: 38px;
+    margin-top: 5px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.my_stones {
+    text-decoration: none;
+    color: #4F5665;
+    min-width: 100px;
+    max-height: 24px;
+    margin-top: 0px;
+
+}
+
+.create_stones {
+    text-decoration: none;
+    color: #4F5665;
+    min-width: 100px;
+    max-height: 24px;
+    margin-top: 0px;
+}
