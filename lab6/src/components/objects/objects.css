@@ -1,0 +1,10 @@
+.objects {
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.objects__cards {
+    display: flex;
+    justify-content: space-between;
+}
+

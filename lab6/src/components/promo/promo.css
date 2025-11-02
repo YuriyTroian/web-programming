@@ -1,0 +1,32 @@
+.promo {
+    margin-bottom: 40px;
+}
+
+.promo__content {
+    background-color: #F4F6F5;
+    border-radius: 59px;
+
+    justify-content: center;
+
+    display: flex;
+    column-gap: 250px;
+}
+
+.promo__title {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 2;
+    color: #111111;
+
+    padding-top: 100px;
+}
+
+.promo__desc {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #2e2e2e;
+
+    padding-top: 50px;
+    max-width: 650px;
+}
