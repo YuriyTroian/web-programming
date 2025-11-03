@@ -1,5 +1,7 @@
+import React from "react";
+
 import './promo.css'
-import promoImg from '../../img/promo.png'
+import promoImg from './../../img/promo.png'
 
 const Promo = () => {
     return (<section className="promo">

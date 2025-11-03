@@ -1,6 +1,8 @@
+import React from "react";
+
 import './button.css'
 
-const Button = () => {
+const ButtonView = () => {
     return (
         <section className="button">
             <div className="container">
@@ -16,4 +18,4 @@ const Button = () => {
     );
 }
 
-export default Button;
+export default ButtonView;

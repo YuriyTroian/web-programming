@@ -1,0 +1,34 @@
+.catalog-filters{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.catalog-filters__types{
+    margin-left: 30px;
+    display: flex;
+    column-gap: 50px;
+}
+
+.filters__by-name,
+.filters__by-price,
+.filters__by-strength {
+    font-size: 17px;
+    margin-right: 15px;
+}
+
+.apply-button{
+    background-color: #82BBB5;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+    width: 100px;
+    height: 30px;
+}
+
+.apply-button:hover {
+    background-color: #625f5f;
+  }

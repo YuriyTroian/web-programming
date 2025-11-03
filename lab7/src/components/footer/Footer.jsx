@@ -1,3 +1,5 @@
+import React from "react";
+
 import './footer.css'
 import logoImg from "../../img/logo.svg";
 import facebookImg from "../../img/facebook.png";
