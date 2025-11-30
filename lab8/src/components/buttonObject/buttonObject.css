@@ -1,0 +1,10 @@
+.object-button{
+    border-radius: 10px;
+    background-color: #82BBB5;
+    border-color: #82BBB5;
+    color: #FFFFFF;
+    text-align: center;
+    height: 1.5rem;
+    display: flex;
+    justify-content: end;
+}
