@@ -3,19 +3,12 @@ import React from "react";
 import styles from './Card.module.css'
 import ButtonObject from "../buttonObject/ButtonObject";
 
-// import img_static from '../../img/promo.png'
+import img_static from '../../img/promo.png'
 
 function Card ({title, strength, description, price, img, itemId}) {
     return(
         <div className={styles.card}>
-            {/* <img className={styles.card__img} src={img_static} alt={styles.card__title} height="300" width="300"/> */}
-            <img 
-                className={styles.card__img} 
-                src={img} // <-- ЗМІНЕНО: тепер використовується динамічний шлях, переданий з CatalogObjects
-                alt={title} // <-- РЕКОМЕНДАЦІЯ: краще використовувати {title} для alt-тексту
-                height="300" 
-                width="300"
-            />
+            <img className={styles.card__img} src={img_static} alt={styles.card__title} height="300" width="300"/>
             <div className={styles.card__body}>
                 <div className={styles.card__text}>
                     <div className={styles.card__title}>

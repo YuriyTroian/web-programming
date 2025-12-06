@@ -5,8 +5,11 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Catalog from "./pages/catalog/Catalog";
 import HomePage from "./pages/home/HomePage";
+import Cart from "./pages/cart/Cart";
+
 import ObjectDetails from "./pages/objectDetails/ObjectDetails";
 import {getStoneList} from "./fetching";
+import axios from "axios";
 
 
 function App() {
@@ -16,7 +19,7 @@ function App() {
       useEffect(() => {
         getStoneList()
           .then(response => {
-                console.log(response)
+              console.log(response)
               setObjectsData(response.data);
           })
           .catch(error => {
@@ -35,6 +38,8 @@ function App() {
             path="/Catalog/:id"
             element={<ObjectDetails objectsData={objectsData} />}
         />
+        <Route path="/Cart" element={<Cart />} />
+
       </Routes>
       <Footer />
     </Router>

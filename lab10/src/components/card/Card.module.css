@@ -1,6 +1,5 @@
 .card {
     position: relative;
-    
 }
 
 .card:hover .card__img {
