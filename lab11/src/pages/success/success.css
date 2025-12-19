@@ -1,0 +1,16 @@
+.success-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.success-box h2, .success-box a1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
