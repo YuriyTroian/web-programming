@@ -1,0 +1,25 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.form-group{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+.form-control{
+    width: 100%;
+}
+
+.button-submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
